@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 1100px;
+            margin: auto;
+            position: relative;
+        }
+        .logo a{
+            font-size: 50px;
+            font-weight: bold;
+            float: left;
+            font-family: 'comic sans ms';
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
+            
+        }
+        .menu{
+            float: right;
+        }
+        nav{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            top: 0;
+            background: #45FFCA;
+            z-index: 1;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li{
+            float: left;
+        }
+        nav ul li a{
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px 0px 16px;
+            text-decoration: none;
+
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        section{
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+
+        }
+        .colom{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .colom .deskripsi{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'comic sans ms';
+            color: #45FFCA;
+            text-shadow: 2px 2px 5px black;
+        }
+        h2{
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 45px;
+            margin-bottom: 20px;
+            color: #45FFCA;
+            width: 100%;
+            line-height: 50px;
+            text-shadow: 5px 5px 10px black;
+        }
+        a.tbl-biru{
+            background: #346751;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        a.tbl-biru:hover{
+            background: lightskyblue;
+        }
+        a.tbl-pink{
+            background: #346751;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        a.tbl-pink:hover{
+            background:lightskyblue ;
+            text-decoration: none;
+        }
+        p{
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+        .tengah{
+            width: 100%;
+            text-align: center;
+        }
+        .tutor-list{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .kartu-tutor{
+            width: 20%;
+            margin: 0 auto;
+
+        }
+        .kartu-tutor img{
+            width: 80%;
+            border-radius: 50%;
+        }
+        .kartu-tutor p{
+            font-family: 'comic sans mc';
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            color: black;
+            
+        }
+
+        .partner-list{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .kartu-partner{
+            width: 20%;
+            margin: 0 auto;
+        }
+        .kartu-partner img{
+            width: 150px;
+            border-radius: 50%;
+        }
+        #Contact{
+            background: #364f6b;
+            padding: 50px 0px 50px 0px;
+        }
+        .footer{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .footer-section{
+            width: 20%;
+            margin: 0 auto;
+        }
+        #Contact h3{
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: antiquewhite;
+            width: 100%;
+            line-height: 50px;
+        }
+        #copyright{
+            text-align: center;
+            width: 100%;
+            padding: 30px 0px 30px 0px;
+            margin-top: 10px;
+        }
+        @media screen and (max-width:991.98px) {
+            .container{
+                width: 90%;
+            }
+            .logo a{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            nav .menu{
+                width: 100%;
+                margin: 0;
+            }
+            nav .menu ul{
+                text-align: center;
+                margin: auto;
+                line-height: 60px;
+
+            }
+            nav .menu ul li{
+                display:inline-block ;
+                float: none;
+            }
+            section{
+                display: block;
+            }
+            section img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .kartu-tutor{
+                width: 50%;
+            }
+            .kartu-partner{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="">Website Evan</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Courses">Courses</a></li>
+                    <li><a href="#Tutors">Tutors</a></li>
+                    <li><a href="#Partners">Partners</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Sign up" class="tbl-biru">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+            <!--untuk home-->
+        <section id="Home">
+            <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?size=626&ext=jpg&ga=GA1.1.822883046.1694598926&semt=sph" alt="">
+            <div class="colom">
+                <p class="deskripsi">Belajar Programming #Otodidak</p>
+                <h2>Tetap konsisten, tetap semangat</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, architecto?</p>
+                <p><a href="" class="tbl-pink">Pelajari lebih lanjut</a></p>
+            </div>
+        </section>
+            <!--untuk courses-->
+        <section id="Courses">
+            <div class="colom">
+                <p class="deskripsi">You Will Need This</p>
+                <h2>Online Courses</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod tenetur accusamus incidunt eius blanditiis totam corrupti rem ipsa necessitatibus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam enim explicabo quis ipsa iste molestiae deleniti, dignissimos corrupti blanditiis.</p>
+                <p><a href="" class="tbl-biru">Pelajari lebih lanjut</a></p>
+            </div>
+            <img src="https://img.freepik.com/free-vector/female-student-listening-webinar-online_74855-6461.jpg?size=626&ext=jpg&ga=GA1.1.822883046.1694598926&semt=sph" alt="">
+        </section>
+        <!--untuk tutors-->
+        <section id="Tutors">
+            <div class="tengah">
+                <div class="colom">
+                    <p class="deskripsi">Our Top Tutors</p>
+                    <h2>Tutors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quibusdam.</p>
+                </div>
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/UcfQ30F83ue0rCRcHlATnA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTQyMDtoPTQyMA--/https://media.zenfs.com/en/accesswire.ca/83da1fa22452806a8736437631dd7434" alt="">
+                        <p>Jason Lee Scoot</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="https://cdn.theorg.com/ccecbc26-06d0-4e20-a77c-6c1c3789c2f7_thumb.jpg" alt="">
+                        <p>Matt Metalios</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="https://cdn.theorg.com/770393c4-6b41-4632-acc9-d792ce169d24_thumb.jpg" alt="">
+                        <p>Corey Dossett</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="https://pbs.twimg.com/profile_images/1650207612636647425/r9Nel475_400x400.jpg" alt="">
+                        <p>Mega chan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--untuk partners-->
+        <section id="Partners">
+            <div class="tengah">
+                <div class="colom">
+                    <p class="deskripsi">Our Top Partners</p>
+                    <h2>Partners</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odit dolore ipsam distinctio nobis iusto illo soluta repellendus at rem!</p>
+                </div>
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="https://t3.ftcdn.net/jpg/01/63/51/98/360_F_163519830_xWUescjSKgNmVofIqD0dvWzMclz7t0hg.jpg" alt="">
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://png.pngtree.com/png-vector/20221030/ourmid/pngtree-university-logo-in-flat-style-png-image_6402853.png" alt="">
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://img.freepik.com/premium-vector/university-logo-concept-university-logo-template_10250-4830.jpg?w=360" alt="">
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/006/470/647/small/university-education-logo-design-template-free-vector.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Website Evan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vel.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vel.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Jl.Seroja 5 Bekasi Jawabarat</p>
+                    <p>kode pos 17520</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>Youtube:</b> Programming dirumah afif</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            &copy; 2023. <b>Website Evan</b> All Right Reserved.
+        </div>
+    </div>
+</body>
+</html>
